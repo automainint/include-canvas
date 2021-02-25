@@ -1,0 +1,66 @@
+BasedOnStyle: LLVM
+UseTab: Never
+TabWidth: 2
+IndentWidth: 2
+
+Language: Cpp
+Standard: c++20
+
+ColumnLimit: 70
+MaxEmptyLinesToKeep: 1
+SpacesBeforeTrailingComments: 1
+AccessModifierOffset: -2
+PenaltyBreakAssignment: 100
+PenaltyBreakBeforeFirstCallParameter: 0
+PenaltyExcessCharacter: 10
+# PenaltyIndentedWhitespace: 5
+PenaltyReturnTypeOnItsOwnLine: 200
+
+IndentCaseLabels: true
+IndentExternBlock: Indent
+IndentGotoLabels: false
+IndentPPDirectives: AfterHash
+# IndentRequires: true
+IndentWrappedFunctionNames: false
+NamespaceIndentation: All
+
+SpaceAfterCStyleCast: true
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: true
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInConditionalStatement: false
+SpacesInSquareBrackets: false
+
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: true
+AlignConsecutiveBitFields: true
+AlignConsecutiveDeclarations: true
+AlignEscapedNewlines: Left
+AllowShortLambdasOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowAllArgumentsOnNextLine: true
+AllowAllConstructorInitializersOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AlwaysBreakTemplateDeclarations: Yes
+# BreakBeforeConceptDeclarations: true
+BreakConstructorInitializers: AfterColon
+Cpp11BracedListStyle: false
+# EmptyLineBeforeAccessModifier: LogicalBlock
+FixNamespaceComments: false
+PointerAlignment: Right
+ReflowComments: true
+SortIncludes: true
+SortUsingDeclarations: true
