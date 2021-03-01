@@ -15,6 +15,8 @@ target_compile_features(
 
 set_property(TARGET example PROPERTY CXX_STANDARD 20)
 
+add_compile_definitions(UNICODE _UNICODE)
+
 target_include_directories(
   canvas INTERFACE
     include
