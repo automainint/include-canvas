@@ -49,7 +49,7 @@ namespace canvas {
 
       case WM_CLOSE: PostQuitMessage(0); break;
 
-      default: result = DefWindowProc(hWnd, message, wParam, lParam);
+      default: result = DefWindowProcW(hWnd, message, wParam, lParam);
     }
 
     return result;
@@ -157,10 +157,10 @@ namespace canvas {
       MSG msg = { 0 };
 
       while (!_ref().is_done) {
-        while (PeekMessage(&msg, nullptr, 0, 0, PM_NOREMOVE)) {
-          if (GetMessage(&msg, nullptr, 0, 0)) {
+        while (PeekMessageW(&msg, nullptr, 0, 0, PM_NOREMOVE)) {
+          if (GetMessageW(&msg, nullptr, 0, 0)) {
             TranslateMessage(&msg);
-            DispatchMessage(&msg);
+            DispatchMessageW(&msg);
           } else {
             _ref().is_done = true;
           }
